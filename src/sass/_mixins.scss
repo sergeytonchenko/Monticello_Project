@@ -1,0 +1,48 @@
+@mixin text-title ($margin-top, $margin-bottom) {
+    font: {
+      family: 'GothamBold';
+      size: 44px;
+      weight: 700;
+    }
+    position: relative;
+    color: #2c4058;
+    text-align: center;
+    text-transform: uppercase;    
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom; 
+}
+
+@mixin text-article () {
+  font: {
+    family: 'Open Sans', sans-serif;
+    size: 18px;
+    weight: 400;
+  }  
+  color: #4b5562;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+}
+
+@mixin text-subtitle ($size, $weight) {
+    font: {
+      family: 'GothamBold';
+      size: $size;
+      weight: $weight;
+    }  
+    color: #2c4058;    
+    text-transform: uppercase;
+} 
+
+@mixin btn {
+    font-size: 14px;    
+    padding: 17px 56px;  
+    background-color: #fff;
+    border: 1px solid #2c4058;
+    color: #2c4058;
+    font-family: 'GothamBook';    
+    font-weight: 300;    
+    text-transform: uppercase;
+    text-decoration: none;       
+}
+
+

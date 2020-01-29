@@ -37,18 +37,11 @@
 @import "../../node_modules/bootstrap/scss/_utilities";
 @import "../../node_modules/bootstrap/scss/_print";
 
-body {
-    background-color: aqua;
-
+.container {
+    max-width: 1200px;
 }
 
-header {
-    display: flex;
-    width: 500px;
-    height: 500px;
-    border: 2px solid black;
-}
-p {
-    font-size: 40px;
-    color: green;
-}
+@import '../sass/reset';
+@import '../sass/fonts';
+@import '../sass/mixins';
+@import "./blocks/_projects"

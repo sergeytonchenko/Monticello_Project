@@ -1,0 +1,64 @@
+.projects {
+    height: 1633px;
+
+    &__title {        
+        @include text-title (135px, 164px); 
+        
+        &::before {        
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: #2c4058;
+            top: -36px;
+            left: 534px;
+        }
+    }
+    
+    &__img {        
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 585px;
+            height: 470px;            
+            background-color: #55b7ff;            
+            top: -70px;
+            left: -214px;
+        }
+    }
+
+    &__block.block {
+        .block {
+
+            &__subtitle {
+                @include text-subtitle (22px, 300);
+                font-family: 'GothamBook';
+                padding-top: 55px;
+            }
+
+            &__title {
+                @include text-subtitle (44px, 700);
+                padding-top: 9px;
+            }
+
+            &__article {
+                @include text-article;
+                padding-top: 26px;
+            }
+
+            &__btn {
+                margin-top: 31px;
+            }
+            
+            &__link {
+                @include btn;
+            }
+             
+        }
+    }
+
+}
