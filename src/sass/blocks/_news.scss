@@ -1,0 +1,68 @@
+.news {
+    height: 1035px;
+    background-color: white;
+    background-image: linear-gradient(45deg, #3c7fd4 0%, #24ccfa 100%);
+
+    &__title {
+        @include text-title (white, 175px, 93px);        
+        
+        &::before {        
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: white;
+            top: -35px;
+            left: 534px;
+        }
+    }
+
+    &__block {
+        padding: 0 20px;
+        background-color: white;
+    }
+
+    &__subtitle {
+        @include text-subtitle (22px, 700);
+        line-height: 33px;
+        padding-top: 22px;
+        letter-spacing: 0.4px;
+    }
+
+    &__text {
+        @include text-article;
+        letter-spacing: 0.2px;
+        padding-top: 5px;
+        padding-bottom: 31px;
+    }
+
+    &__photo {
+        width: 60px;
+        height: 60px;
+        background-image: url(../../img/news/icon1.png);
+        
+        &--second {
+            background-image: url(../../img/news/icon2.png);
+        }
+
+        &--third {
+            background-image: url(../../img/news/icon3.png);
+        }
+    }
+
+    &__author {
+        @include text-subtitle (22px, 300);
+        font-family: 'GothamBook';
+        padding-top: 5px;
+        padding-left: 17px;
+        letter-spacing: -2.5px;
+    }
+
+    &__date {
+        @include text-subtitle (14px, 300);
+        font-family: 'GothamBook';
+        color: #55b7ff;
+        padding: 9px 0 40px 17px;                
+    }
+}
