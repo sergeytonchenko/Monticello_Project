@@ -1,0 +1,40 @@
+.gallery {
+    height: 1000px;    
+
+    &__title {
+        @include text-title (#2c4058, 175px, 93px);        
+        
+        &::before {        
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: #2c4058;
+            top: -35px;
+            left: 534px;
+        }
+    }
+
+    &__btn {
+        padding-top: 70px;
+        text-align: center;                
+    }
+
+    &__link {
+        @include btn;
+        padding: 17px 55px;
+    }
+
+    &__link:hover  {
+        background-color: #2c4058;
+        border: 1px solid #fff;
+        color: #fff;                
+    }
+
+    &__link:active  {
+        background-color: #4b6d95;
+        border: 1px solid rgb(202, 200, 200);
+        color: rgb(202, 200, 200);                
+    }
+}
