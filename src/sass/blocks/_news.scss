@@ -79,12 +79,11 @@
 }
 .owl-prev, .owl-next {
     position: absolute;
-    top: 50%;
-    margin-top: -20px;
+    top: 42%;    
 }
 .owl-prev {
-    left: 5px;
+    left: -105px;
 }
 .owl-next {
-    right: 5px;
+    right: -105px;    
 }

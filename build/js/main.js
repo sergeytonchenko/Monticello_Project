@@ -4,7 +4,7 @@ $(document).ready(function(){
         loop: true,
         margin: 30,
         nav: true,
-        autoplay: true,                    
+        autoplay: true,                           
         autoplayTimeout: 2000,
         responsive:{
             0:{
@@ -18,6 +18,8 @@ $(document).ready(function(){
             }
         }
     });
+    $('.owl-prev span').html('<img src="../img/news/prev.png"></img>');
+    $('.owl-next span').html('<img src="../img/news/next.png"></img>');
 
     $(".gallery__image").click(function(){	// Событие клика на маленькое изображение
 	  	let img = $(this);	// Получаем изображение, на которое кликнули
