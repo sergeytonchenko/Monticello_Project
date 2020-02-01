@@ -1,5 +1,6 @@
 .gallery {
-    height: 1000px;    
+    height: 100%;
+    position: relative;    
 
     &__title {
         @include text-title (#2c4058, 175px, 93px);        
@@ -15,9 +16,34 @@
             left: 534px;
         }
     }
+    &__picture {
+        position: relative;
+    }
+    &__image {
+        cursor: pointer;
+        height: 100%;
+        width: 100%;                
+        
+        &--hover {
+            position: absolute;
+            pointer-events: none;
+            top: 50%;
+            left: 50%;            
+            transform: translate(-48%, -50%);
+            z-index: -1;
+        }
+
+        &:hover {
+            opacity: 0.9;
+        }
+        &:hover + &--hover {
+            z-index: 2;        
+        }
+    }   
 
     &__btn {
-        padding-top: 70px;
+        padding-top: 73px;
+        padding-bottom: 157px;
         text-align: center;                
     }
 
@@ -36,5 +62,34 @@
         background-color: #4b6d95;
         border: 1px solid rgb(202, 200, 200);
         color: rgb(202, 200, 200);                
+    }
+
+    &__container {
+        position: absolute;
+	    height: 100%;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	    display: none;
+	    text-align: center;
+    }
+
+    &__grey {
+        background: rgba(0,0,0,0.4);
+        position: absolute;
+        top: 0;
+	    left: 0;
+	    z-index: 1;
+	    height: 100%;
+	    width: 100%;   
+    }
+
+    &__large { 
+        position: absolute;       
+        top: 20%;
+	    left: 28%;  	
+        z-index: 2;
+        max-height: 94%;
+        max-width: 94%;
     }
 }

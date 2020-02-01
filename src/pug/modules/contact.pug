@@ -1,0 +1,28 @@
+.contact
+  #map(style='height: 699px')
+  .container
+    .row
+      .col-8.offset-2
+        .contact__block
+          .contact__title get in touch
+          .row
+              .col-6
+                  .contact__info.d-flex.flex-column.align-items-start
+                      a.contact__link(href="https://www.google.com/maps?q=Brooklyn", target="_blank")
+                        i.fas.fa-map-marker-alt
+                        small.contact__small 91 Nolan Extensions Suite 670
+                      a.contact__link(href="+001-356-868-2454", target="_blank")
+                        i.fas.fa-phone-alt
+                        small.contact__small +001 356-868-2454
+                      a.contact__link(href="mailto:gahuy93@gmail.com", target="_blank")
+                        i.fas.fa-inbox
+                        small.contact__small gahuy93@gmail.com
+                      .contact__link
+                        i.fas.fa-clock
+                        small.contact__small From 07:05AM to 19:30PM
+              .col-6
+                  form.contact__form(action="" id='form').d-flex.flex-column.align-items-start
+                      input.contact__input(type="text", name="text" id="text" placeholder='Your name' required)
+                      input.contact__input(type="email", name="email", id="email" placeholder='Email' required)
+                      input.contact__submit(type="submit", value="submit", data-aos="zoom-in-right")
+

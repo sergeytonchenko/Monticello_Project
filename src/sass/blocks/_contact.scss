@@ -1,0 +1,49 @@
+.contact {
+    position: relative;
+
+    &__block {
+        position: absolute;
+        top: -306px;
+        width: 770px;
+        height: 450px;
+        background-color: #fff;
+        box-shadow: 0 -4px 30px rgba(133, 133, 133, 0.2);
+    }
+
+    &__title {
+        @include text-title (#2c4058, 85px, 43px);
+
+        &::before {        
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: #2c4058;
+            top: -25px;
+            left: 335px;
+        }
+    }
+
+    &__link {        
+        text-decoration: none;
+        padding-bottom: 38px;
+
+        & i {
+            font-size: 15px;
+        }
+    }
+
+    &__info {
+        padding-top: 6px; 
+        padding-left: 60px;        
+    }
+    
+    &__small {
+        padding-left: 9px;        
+        color: #2c4058;
+        font-size: 18px;
+        font-family: 'GothamBook';    
+        font-weight: 300;         
+    }
+}
