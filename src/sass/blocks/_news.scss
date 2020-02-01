@@ -75,11 +75,9 @@
 }
 
 .owl-prev, .owl-next {
-    color: white;
-}
-.owl-prev, .owl-next {
     position: absolute;
-    top: 42%;    
+    top: 39%;
+    margin-top: 0px;    
 }
 .owl-prev {
     left: -105px;
@@ -87,3 +85,18 @@
 .owl-next {
     right: -105px;    
 }
+.owl-dots {
+    margin-top: 55px;    
+    
+}
+.owl-dot{
+    margin-left: 13px;
+    margin-right: 13px;
+ }
+ .owl-dot.active span{
+    background: white !important;
+ }
+ .owl-dot span{
+    background: none !important;
+    border: 1px solid white;
+ }

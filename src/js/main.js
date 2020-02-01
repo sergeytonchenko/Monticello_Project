@@ -4,7 +4,8 @@ $(document).ready(function(){
         loop: true,
         margin: 30,
         nav: true,
-        autoplay: true,                           
+        autoplay: true,
+        dotsEach: 1,                           
         autoplayTimeout: 2000,
         responsive:{
             0:{
