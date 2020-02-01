@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $("#news__slider").owlCarousel({
         items: 3,
         loop: true,
         margin: 30,
@@ -19,6 +19,16 @@ $(document).ready(function(){
             }
         }
     });
+
+    $("#header__slider").owlCarousel({
+      items: 1,
+      loop: true,      
+      nav: false,
+      autoplay: true,                                 
+      autoplayTimeout: 2000,
+      animateIn: 'slideInUp',
+      animateOut: "slideOutUp"    
+  });
     
     $('.owl-prev span').html('<img src="../img/news/prev.png"></img>');
     $('.owl-next span').html('<img src="../img/news/next.png"></img>');

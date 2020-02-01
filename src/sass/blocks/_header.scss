@@ -1,3 +1,33 @@
 .header {
     height: 800px;
+    background-color: #4b4b4b;
+    background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+
+    &__block {
+        height: 800px;        
+        background-image: url(../../img/header/header_bg.png);
+        background-size: cover;
+        background-position: top;
+        text-align: center;
+    }
+
+    &__title {
+        padding-top: 358px;        
+        color: white;
+        font-family: 'GothamBold';
+        font-size: 80px;
+        font-weight: 700;
+        letter-spacing: 8px;        
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        color: white;
+        font-family: Gotham;
+        font-size: 18px;
+        font-weight: 300;        
+        text-transform: uppercase;
+        padding-top: 28px;
+        letter-spacing: 5.3px;
+    }
 }
