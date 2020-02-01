@@ -1,5 +1,6 @@
 .header {
     height: 800px;
+    position: relative;
     background-color: #4b4b4b;
     background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
 
@@ -29,5 +30,9 @@
         text-transform: uppercase;
         padding-top: 28px;
         letter-spacing: 5.3px;
+    }
+
+    &__nav {
+        position: absolute;        
     }
 }

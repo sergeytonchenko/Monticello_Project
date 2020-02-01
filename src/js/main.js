@@ -24,7 +24,8 @@ $(document).ready(function(){
       items: 1,
       loop: true,      
       nav: false,
-      autoplay: true,                                 
+      autoplay: true,
+      mouseDrag: false,                                 
       autoplayTimeout: 2000,
       animateIn: 'slideInUp',
       animateOut: "slideOutUp"    
