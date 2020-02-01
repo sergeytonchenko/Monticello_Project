@@ -1,5 +1,34 @@
 .header
-  .owl-carousel.owl-theme.owl-loaded#header__slider
+  .header__nav
+    .container
+      .row
+        .col-3
+          .header__logo
+            a(href=`#`)
+              img(src="../../img/footer/logo.svg", alt="logo",)
+        .col-7
+          ul.header__list.d-flex.flex-row.justify-content-around
+            li.header__item 
+                a.header__link(href=`#about`) Projects
+            li.header__item 
+                a.header__link(href=`#projects`) News
+            li.header__item
+                a.header__link(href=`#news`) Gallery
+            li.header__item 
+                a.header__link(href=`#contact`) Contact
+        .col-2
+          .header__social.d-flex.flex-row.justify-content-between
+            a.header__circle(href="https://www.facebook.com/", target='_blank')
+              i.fab.fa-facebook-f.header__social-icon
+            a.header__circle(href="https://twitter.com/", target='_blank')
+              i.fab.fa-twitter.header__social-icon
+            a.header__circle(href="https://www.instagram.com/", target='_blank')
+              i.fab.fa-instagram.header__social-icon
+
+
+
+
+  .owl-carousel.owl-theme.owl-loaded.header__slider
     .header__block
       h1.header__title Simple & modern
       p.header__subtitle We make the world's beautiful every day
@@ -12,11 +41,4 @@
     .header__block
       h1.header__title Friendly & helpful
       p.header__subtitle We make the world's beautiful every day
-  .header__nav
-    .container
-      .row
-        .col-3
-          .footer__logo
-            a(href=`#`)
-              img(src="../../img/footer/logo.svg", alt="logo",)
           

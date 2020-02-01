@@ -33,6 +33,80 @@
     }
 
     &__nav {
-        position: absolute;        
+        // position: absolute;
+        // top: 0;
+        // left: 0;        
+    }
+
+    &__logo {
+        padding-top: 53px;
+    }
+
+    &__list {
+        padding-top: 68px;
+    }
+
+    &__link {
+        position: relative;
+        color: white;
+        font-family: Gotham;
+        font-size: 14px;
+        font-weight: 300;        
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;        
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: -22px;            
+            width: 9px;
+            height: 9px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+
+        &:hover  {
+            text-decoration: none;
+            color: white;
+
+            &::before {
+                background-color: white;
+            }
+        }
+    }
+
+    &__social {
+        margin-top: 60px;
+        margin-left: 9px;
+    }
+
+    &__circle {
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s ease-in;
+
+        & i {
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &:hover i {
+            color: #4267B2;
+            text-decoration: none;
+        }
+
+        &:hover {
+            border: 1px solid #4267B2; 
+            text-decoration: none;           
+        }
     }
 }

@@ -20,11 +20,11 @@ $(document).ready(function(){
         }
     });
 
-    $("#header__slider").owlCarousel({
+    $(".header__slider").owlCarousel({
       items: 1,
       loop: true,      
       nav: false,
-      autoplay: true,
+      autoplay: false,
       mouseDrag: false,                                 
       autoplayTimeout: 2000,
       animateIn: 'slideInUp',
