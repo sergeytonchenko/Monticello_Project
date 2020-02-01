@@ -1,5 +1,6 @@
 .contact {
     position: relative;
+    z-index: 2;
 
     &__block {
         position: absolute;
@@ -25,19 +26,27 @@
         }
     }
 
-    &__link {        
-        text-decoration: none;
+    &__link {
         padding-bottom: 38px;
 
+        &:hover small {
+         text-shadow: 3px 3px 4px blueviolet;         
+        } 
+        
         & i {
             font-size: 15px;
+            color: #7e5aff;
         }
     }
 
     &__info {
         padding-top: 6px; 
-        padding-left: 60px;        
-    }
+        padding-left: 60px; 
+        
+        & a {
+            text-decoration: none;
+        }
+    }    
     
     &__small {
         padding-left: 9px;        
@@ -46,4 +55,56 @@
         font-family: 'GothamBook';    
         font-weight: 300;         
     }
+
+    &__input {
+        max-width: 310px;
+        border-bottom: 1px solid #2c4058;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 19px;
+        font-family: 'GothamBook';
+        font-size: 18px;        
+        
+        &:focus {
+            background-color:#f4f4f4;
+        }
+    }
+
+    &__input:first-child {
+        margin-bottom: 32px;
+    }
+
+    &__input:nth-child(2) {
+        margin-bottom: 29px;
+    }
+
+    &__input::-webkit-input-placeholder {
+        color:rgba(44, 64, 88, 0.5);
+        font-family: 'GothamBook';
+    }
+
+    &__btn {
+        @include btn;
+        padding: 16.5px 41.5px;             
+        margin-left: 170px;        
+
+        &:hover  {
+            background-color: #2c4058;
+            border: 1px solid #fff;
+            color: #fff; 
+            text-decoration: none;                
+        }
+
+        &:active  {
+            background-color: #4b6d95;
+            border: 1px solid rgb(202, 200, 200);
+            color: rgb(202, 200, 200);
+            text-decoration: none;                 
+        }
+        
+    }
+
 }

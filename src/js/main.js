@@ -37,9 +37,9 @@ $(document).ready(function(){
 });
 
 function initMap() {    
-    let myLatLng = {lat: 40.677541, lng: -73.903475};
+    let myLatLng = {lat: 40.677541, lng: -73.903475};    
     let map = new google.maps.Map(document.getElementById('map'), {
-    center: myLatLng,
+    center: {lat: 40.671737, lng: -73.900000},
     zoom: 14,
     styles: [
                 {

@@ -55,13 +55,15 @@
     &__link:hover  {
         background-color: #2c4058;
         border: 1px solid #fff;
-        color: #fff;                
+        color: #fff;
+        text-decoration: none;                
     }
 
     &__link:active  {
         background-color: #4b6d95;
         border: 1px solid rgb(202, 200, 200);
-        color: rgb(202, 200, 200);                
+        color: rgb(202, 200, 200); 
+        text-decoration: none;                 
     }
 
     &__container {
