@@ -9,13 +9,13 @@
         .col-7
           ul.header__list.d-flex.flex-row.justify-content-around
             li.header__item 
-                a.header__link(href=`#about`) Projects
+                a#project.header__link Projects
             li.header__item 
-                a.header__link(href=`#projects`) News
+                a#news.header__link News
             li.header__item
-                a.header__link(href=`#news`) Gallery
+                a#gallery.header__link Gallery
             li.header__item 
-                a.header__link(href=`#contact`) Contact
+                a#contact.header__link Contact
         .col-2
           .header__social.d-flex.flex-row.justify-content-between
             a.header__circle(href="https://www.facebook.com/", target='_blank')
@@ -24,10 +24,6 @@
               i.fab.fa-twitter.header__social-icon
             a.header__circle(href="https://www.instagram.com/", target='_blank')
               i.fab.fa-instagram.header__social-icon
-
-
-
-
   .owl-carousel.owl-theme.owl-loaded.header__slider
     .header__block
       h1.header__title Simple & modern

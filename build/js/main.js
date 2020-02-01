@@ -1,4 +1,29 @@
 $(document).ready(function(){
+
+    $('#project').on('click', function(){        
+      let dest = document.querySelector('.projects'); 
+        $('html,body').animate({ 
+          scrollTop: $(dest).offset().top}, 700);
+    });
+
+    $('#news').on('click', function(){        
+      let dest = document.querySelector('.news'); 
+        $('html,body').animate({ 
+          scrollTop: $(dest).offset().top}, 700);
+    });
+
+    $('#gallery').on('click', function(){        
+      let dest = document.querySelector('.gallery'); 
+        $('html,body').animate({ 
+          scrollTop: $(dest).offset().top}, 700);
+    });
+
+    $('#contact').on('click', function(){        
+      let dest = document.querySelector('.contact'); 
+        $('html,body').animate({ 
+          scrollTop: $(dest).offset().top}, 700);
+    });
+
     $("#news__slider").owlCarousel({
         items: 3,
         loop: true,
@@ -24,7 +49,7 @@ $(document).ready(function(){
       items: 1,
       loop: true,      
       nav: false,
-      autoplay: false,
+      autoplay: true,
       mouseDrag: false,                                 
       autoplayTimeout: 2000,
       animateIn: 'slideInUp',
