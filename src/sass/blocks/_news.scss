@@ -5,8 +5,7 @@
 
     &__bg {
         height: 1035px;
-        background-image: url(../../img/news/news_bg.png);
-        width: 100%;
+        background-image: url(../../img/news/news_bg.png);        
         background-position: center;
         background-repeat: no-repeat;       
     }
@@ -73,4 +72,19 @@
         color: #55b7ff;
         padding: 9px 0 40px 17px;                
     }
+}
+
+.owl-prev, .owl-next {
+    color: white;
+}
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+}
+.owl-prev {
+    left: 5px;
+}
+.owl-next {
+    right: 5px;
 }

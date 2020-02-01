@@ -42,8 +42,10 @@
 }
 
 @import '../sass/reset';
-@import '../sass/fonts';
-@import '../sass/mixins';
+@import '../sass/_fonts';
+@import '../sass/_mixins';
+@import '../sass/owl_sass/owl.carousel.scss';
+@import '../sass/owl_sass/owl.theme.default.scss';
 @import './blocks/_projects';
 @import './blocks/_news';
 @import './blocks/_gallery';
