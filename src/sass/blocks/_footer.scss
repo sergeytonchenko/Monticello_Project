@@ -5,6 +5,13 @@
     background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
     z-index: 1;
 
+    &__bg {
+        height: 524px;
+        background-image: url(../../img/footer/footer_bg.png);        
+        background-position: center;
+        background-repeat: no-repeat;       
+    }
+
     &__logo, &__social {
         margin-top: 198px;
     }

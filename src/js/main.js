@@ -19,6 +19,7 @@ $(document).ready(function(){
             }
         }
     });
+    
     $('.owl-prev span').html('<img src="../img/news/prev.png"></img>');
     $('.owl-next span').html('<img src="../img/news/next.png"></img>');
 
