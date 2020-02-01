@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+    $('.header__down').on('click', function(){        
+      let dest = document.querySelector('.projects'); 
+        $('html,body').animate({ 
+          scrollTop: $(dest).offset().top}, 700);
+    });
+
     $('#project').on('click', function(){        
       let dest = document.querySelector('.projects'); 
         $('html,body').animate({ 
@@ -52,7 +58,7 @@ $(document).ready(function(){
       dots: true,
       dotsEach: 1,
       autoplay: true,
-      mouseDrag: false,
+      mouseDrag: true,
       dotsClass: 'header__dots',
       dotClass: 'header__dot',                                 
       autoplayTimeout: 2000,
