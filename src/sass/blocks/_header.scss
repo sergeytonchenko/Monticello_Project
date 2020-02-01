@@ -114,4 +114,32 @@
             text-decoration: none;           
         }
     }
+
+    &__dots {
+        display: flex;
+        flex-direction: column;        
+        position: absolute;
+        top: 296px;
+        right: 184px;
+        margin-top: 0 !important;
+         
+    }
+
+    &__dot {
+        margin-bottom: 37px;
+        border: none;
+        background: none;
+
+        &.active span {
+            background-color: white;
+        }
+
+        & span {
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid white;
+        }
+    }    
 }

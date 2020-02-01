@@ -49,8 +49,12 @@ $(document).ready(function(){
       items: 1,
       loop: true,      
       nav: false,
+      dots: true,
+      dotsEach: 1,
       autoplay: true,
-      mouseDrag: false,                                 
+      mouseDrag: false,
+      dotsClass: 'header__dots',
+      dotClass: 'header__dot',                                 
       autoplayTimeout: 2000,
       animateIn: 'slideInUp',
       animateOut: "slideOutUp"    
