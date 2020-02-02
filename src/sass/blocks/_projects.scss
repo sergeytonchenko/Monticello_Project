@@ -27,19 +27,7 @@
             height: 1px;
             background-color: #2c4058;
             top: -36px;
-            left: 534px;
-
-            @media (max-width: 1199px) {
-                left: 448px;
-            }
-
-            @media (max-width: 991px) {
-                left: 330px;
-            }
-
-            @media (max-width: 767px) {
-                left: 260px;
-            }
+            left: 43%;            
 
             @media (max-width: 575px) {
                 display: none;
