@@ -1,17 +1,24 @@
 .news {
-    height: 1035px;    
+    // height: 1035px;    
     background-color: white;
     background-image: linear-gradient(45deg, #3c7fd4 0%, #24ccfa 100%);    
 
     &__bg {
-        height: 1035px;
+        height: 100%;
         background-image: url(../../img/news/news_bg.png);        
         background-position: center;
-        background-repeat: no-repeat;       
+        background-repeat: no-repeat;
+        
+        
     }
 
     &__title {
-        @include text-title (white, 175px, 93px);        
+        @include text-title (white, 175px, 93px); 
+        
+        @media (max-width: 1199px) {
+            margin-top: 90px;
+            margin-bottom: 70px;
+        }
         
         &::before {        
             content: '';
@@ -21,13 +28,22 @@
             height: 1px;
             background-color: white;
             top: -35px;
-            left: 534px;
+            left: 45%;
+        }
+    }
+
+    &__container {
+        height: 514px;
+
+        @media (max-width: 1199px) {
+            height: 560px;
         }
     }
 
     &__block {
         padding: 0 20px;
         background-color: white;
+        
     }
 
     &__subtitle {
@@ -35,6 +51,18 @@
         line-height: 33px;
         padding-top: 22px;
         letter-spacing: 0.4px;
+
+        @media (max-width: 1199px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 22px;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 20px;
+        }
     }
 
     &__text {
@@ -42,6 +70,18 @@
         letter-spacing: 0.2px;
         padding-top: 5px;
         padding-bottom: 31px;
+
+        @media (max-width: 1199px) {
+            font-size: 16px;
+        }
+        
+        @media (max-width: 991px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 750px) {
+            font-size: 16px;
+        }
     }
 
     &__photo {
@@ -64,6 +104,10 @@
         padding-top: 5px;
         padding-left: 17px;
         letter-spacing: -2.5px;
+
+        @media (max-width: 1199px) {
+            font-size: 20px;
+        }
     }
 
     &__date {
@@ -77,7 +121,11 @@
 .owl-prev, .owl-next {
     position: absolute;
     top: 39%;
-    margin-top: 0px;    
+    margin-top: 0px;
+    
+    @media (max-width: 1199px) {
+        display: none !important;
+    } 
 }
 .owl-prev {
     left: -105px;
@@ -86,7 +134,13 @@
     right: -105px;    
 }
 .owl-dots {
-    margin-top: 55px;    
+    margin-top: 55px;
+    margin-bottom: 131px; 
+    
+    @media (max-width: 1199px) {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
     
 }
 .owl-dot{

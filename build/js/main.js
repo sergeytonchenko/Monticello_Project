@@ -31,22 +31,24 @@ $(document).ready(function(){
     });
 
     $("#news__slider").owlCarousel({
-        items: 3,
+        // items: 3,
         loop: true,
         margin: 30,
         nav: true,
         autoplay: true,
         dotsEach: 1,                           
         autoplayTimeout: 2000,
+        responsiveClass:true,
         responsive:{
-            0:{
-                items:1
+            0 :{
+                items: 1,
+                nav: false
             },
-            600:{
-                items:2
+            690 :{
+                items: 2
             },
-            1000:{
-                items:3
+            992 :{
+                items: 3
             }
         }
     });

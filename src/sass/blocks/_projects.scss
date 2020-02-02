@@ -62,7 +62,7 @@
         &::before {
             background-color: #55b7ff;            
             top: -70px;
-            left: -11.2vw;
+            left: -11.4vw;
 
             @media (max-width: 1199px) {
                 display: none;
@@ -72,7 +72,7 @@
         &--right::before {
             background-color: #7e5aff;            
             top: -70px;
-            left: 15.6vw;
+            left: 15.4vw;
 
             @media (max-width: 1199px) {
                 display: none;
@@ -81,7 +81,7 @@
     }
 
     &__img { 
-        margin-bottom: 207px;
+        margin-bottom: 207px;        
         z-index: 2;
 
         @media (max-width: 1199px) {
@@ -100,7 +100,7 @@
         }
 
         &--right {
-            padding-left: 40px;
+            padding-left: 36px;
             margin-bottom: 137px;
             
             @media (max-width: 1199px) {
