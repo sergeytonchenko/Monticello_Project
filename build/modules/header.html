@@ -3,10 +3,10 @@
   <div class="container">
     <div class="header__nav">
       <div class="row">
-        <div class="col-xl-3 col-lg-3">
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 order-1 col-12">
           <div class="header__logo"><a href="#"><img src="./img/footer/logo.svg" alt="logo"/></a></div>
         </div>
-        <div class="col-xl-7 col-lg-6">
+        <div class="col-xl-7 col-lg-6 d-lg-block d-md-none d-sm-none order-2 d-none">
           <ul class="header__list d-flex flex-row justify-content-around">
             <li class="header__item"> <a class="header__link" id="project">Projects</a></li>
             <li class="header__item"> <a class="header__link" id="news">News</a></li>
@@ -14,10 +14,25 @@
             <li class="header__item"> <a class="header__link" id="contact">Contact</a></li>
           </ul>
         </div>
-        <div class="col-xl-2 col-lg-3">
+        <div class="col-md-3 col-sm-2 col-3 order-md-3 order-sm-3 order-3 d-flex flex-row-reverse align-items-center d-lg-none">
+          <div class="header__burger burger">
+            <nav>
+              <div class="burger__toggle">
+                <input type="checkbox"/><span></span><span></span><span></span>
+                <ul class="burger__link">
+                  <li class="burger__item"><a id="burger_projects">Projects</a></li>
+                  <li class="burger__item"><a id="burger_news">News</a></li>
+                  <li class="burger__item"><a id="burger_gallery">Gallery</a></li>
+                  <li class="burger__item"><a id="burger_contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-5 col-sm-6 col-9 order-md-2 order-sm-2 order-2">
           <div class="header__social d-flex flex-row justify-content-between"><a class="header__circle" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f header__social-icon"></i></a><a class="header__circle" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter header__social-icon"></i></a><a class="header__circle" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram header__social-icon"></i></a></div>
         </div>
-        <div class="col-12">
+        <div class="col-12 order-4">
           <div class="header__down"><img src="./img/header/down.png" alt="scroll"/></div>
         </div>
       </div>

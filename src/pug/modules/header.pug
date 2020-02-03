@@ -2,11 +2,11 @@
   .container
     .header__nav
       .row
-        .col-xl-3.col-lg-3
+        .col-xl-3.col-lg-3.col-md-4.col-sm-4.order-1.col-12
           .header__logo
             a(href=`#`)
               img(src="./img/footer/logo.svg", alt="logo",)
-        .col-xl-7.col-lg-6
+        .col-xl-7.col-lg-6.d-lg-block.d-md-none.d-sm-none.order-2.d-none
           ul.header__list.d-flex.flex-row.justify-content-around
             li.header__item 
                 a#project.header__link Projects
@@ -16,7 +16,24 @@
                 a#gallery.header__link Gallery
             li.header__item 
                 a#contact.header__link Contact
-        .col-xl-2.col-lg-3
+        .col-md-3.col-sm-2.col-3.order-md-3.order-sm-3.order-3.d-flex.flex-row-reverse.align-items-center.d-lg-none
+          .header__burger.burger
+            nav
+              .burger__toggle
+                input(type='checkbox')
+                span
+                span
+                span
+                ul.burger__link
+                  li.burger__item
+                    a#burger_projects Projects
+                  li.burger__item
+                    a#burger_news News
+                  li.burger__item
+                    a#burger_gallery Gallery
+                  li.burger__item
+                    a#burger_contact Contact
+        .col-xl-2.col-lg-3.col-md-5.col-sm-6.col-9.order-md-2.order-sm-2.order-2
           .header__social.d-flex.flex-row.justify-content-between
             a.header__circle(href="https://www.facebook.com/", target='_blank')
               i.fab.fa-facebook-f.header__social-icon
@@ -24,7 +41,7 @@
               i.fab.fa-twitter.header__social-icon
             a.header__circle(href="https://www.instagram.com/", target='_blank')
               i.fab.fa-instagram.header__social-icon
-        .col-12
+        .col-12.order-4
           .header__down
             img(src="./img/header/down.png", alt="scroll")
   .owl-carousel.owl-theme.owl-loaded.header__slider

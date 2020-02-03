@@ -12,7 +12,19 @@ $(document).ready(function(){
           scrollTop: $(dest).offset().top}, 700);
     });
 
+    $('#burger_project').on('click', function(){        
+      let dest = document.querySelector('.projects'); 
+        $('html,body').animate({ 
+          scrollTop: $(dest).offset().top}, 700);
+    });
+
     $('#news').on('click', function(){        
+      let dest = document.querySelector('.news'); 
+        $('html,body').animate({ 
+          scrollTop: $(dest).offset().top}, 700);
+    });
+
+    $('#burger_news').on('click', function(){        
       let dest = document.querySelector('.news'); 
         $('html,body').animate({ 
           scrollTop: $(dest).offset().top}, 700);
@@ -24,7 +36,19 @@ $(document).ready(function(){
           scrollTop: $(dest).offset().top}, 700);
     });
 
+    $('#burger_gallery').on('click', function(){        
+      let dest = document.querySelector('.gallery'); 
+        $('html,body').animate({ 
+          scrollTop: $(dest).offset().top}, 700);
+    });
+
     $('#contact').on('click', function(){        
+      let dest = document.querySelector('.contact'); 
+        $('html,body').animate({ 
+          scrollTop: $(dest).offset().top}, 700);
+    });
+
+    $('#burger_contact').on('click', function(){        
       let dest = document.querySelector('.contact'); 
         $('html,body').animate({ 
           scrollTop: $(dest).offset().top}, 700);
@@ -59,7 +83,7 @@ $(document).ready(function(){
       nav: false,
       dots: true,
       dotsEach: 1,
-      autoplay: true,
+      autoplay: false,
       mouseDrag: true,
       dotsClass: 'header__dots',
       dotClass: 'header__dot',                                 
