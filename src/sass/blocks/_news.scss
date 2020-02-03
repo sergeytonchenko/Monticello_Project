@@ -60,8 +60,12 @@
             font-size: 22px;
         }
 
-        @media (max-width: 991px) {
-            font-size: 20px;
+        @media (max-width: 767px) {
+            font-size: 28px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 24px;
         }
     }
 
@@ -135,8 +139,7 @@
 }
 .owl-dots {
     margin-top: 55px;
-    margin-bottom: 131px;   
-    
+    margin-bottom: 133px; 
 
     @media (max-width: 1199px) {
         margin-top: 40px !important;

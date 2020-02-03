@@ -121,7 +121,11 @@
         position: absolute;
         top: 296px;
         right: 184px;
-        margin-top: 0 !important; 
+        margin-top: 0 !important;
+        
+        @media (max-width: 1199px) {
+            display: none;
+        }
     }
 
     &__dot {
