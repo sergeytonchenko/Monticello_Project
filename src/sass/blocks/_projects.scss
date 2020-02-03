@@ -27,11 +27,8 @@
             height: 1px;
             background-color: #2c4058;
             top: -36px;
-            left: 28vw;            
-
-            @media (max-width: 1199px) {
-                left: 43vw;
-            }
+            left: 50%;
+            transform: translateX(-50%);
 
             @media (max-width: 575px) {
                 display: none;

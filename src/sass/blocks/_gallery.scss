@@ -24,15 +24,8 @@
             height: 1px;
             background-color: #2c4058;
             top: -35px;
-            left: 28vw;            
-
-            @media (max-width: 1199px) {
-                left: 43vw;
-            }
-
-            @media (max-width: 767px) {
-                left: 39vw;
-            }
+            left: 50%;
+            transform: translateX(-50%); 
 
             @media (max-width: 575px) {
                 display: none;

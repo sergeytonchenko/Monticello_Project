@@ -1,5 +1,5 @@
 .header {
-    height: 800px;
+    // height: 800px;
     position: relative;
     background-color: #4b4b4b;
     background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);    
@@ -16,7 +16,11 @@
         background-image: url(../../img/header/header_bg.png);
         background-size: cover;
         background-position: top;
-        text-align: center;        
+        text-align: center;
+        
+        @media (max-width: 1199px) {
+            height: 600px;
+        }
     }
 
     &__title {
@@ -27,6 +31,11 @@
         font-weight: 700;
         letter-spacing: 8px;        
         text-transform: uppercase;
+
+        @media (max-width: 1199px) {
+            font-size: 60px;
+            padding-top: 258px;
+        }
     }
 
     &__subtitle {
@@ -49,6 +58,10 @@
 
     &__list {
         padding-top: 68px;
+
+        @media (max-width: 1199px) {
+            padding-left: 20px;
+        }
     }
 
     &__link {
@@ -120,7 +133,8 @@
         flex-direction: column;        
         position: absolute;
         top: 296px;
-        right: 184px;
+        right: 10%;
+        transform: translateX(-10%);        
         margin-top: 0 !important;
         
         @media (max-width: 1199px) {
@@ -149,6 +163,12 @@
     &__down {
         text-align: center;
         margin-top: 600px;
+        margin-bottom: 47px;
         cursor: pointer;
+        background: transparent;
+
+        @media (max-width: 1199px) {
+            margin-top: 400px;
+        }
     }
 }
