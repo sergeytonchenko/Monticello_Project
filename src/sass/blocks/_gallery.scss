@@ -40,7 +40,7 @@
         }
     }
     &__picture {
-        position: relative;
+        position: relative;       
     }
     &__image {
         cursor: pointer;
@@ -49,9 +49,8 @@
         
         @media (max-width: 767px) {
             padding: 0 0 10px 0;
-        }
-        
-        
+        } 
+
         &--hover {
             position: absolute;
             pointer-events: none;
@@ -63,6 +62,10 @@
 
         &:hover {
             opacity: 0.9;
+            
+            @media (max-width: 767px) {
+                display: none;
+            }
         }
         &:hover + &--hover {
             z-index: 2;        
@@ -70,7 +73,7 @@
     }   
 
     &__btn {
-        padding-top: 73px;
+        padding-top: 70px;
         padding-bottom: 157px;
         text-align: center;
         
@@ -110,7 +113,11 @@
 	    top: 0;
 	    left: 0;
 	    display: none;
-	    text-align: center;
+        text-align: center;
+        
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     &__grey {
@@ -120,7 +127,11 @@
 	    left: 0;
 	    z-index: 1;
 	    height: 100%;
-	    width: 100%;   
+        width: 100%; 
+        
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     &__large { 
@@ -130,5 +141,16 @@
         z-index: 2;
         max-height: 94%;
         max-width: 94%;
+
+        @media (max-width: 1199px) {
+            top: 10%;
+	        left: 15%;
+            max-height: 70%;
+            max-width: 70%;
+        }
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 }
