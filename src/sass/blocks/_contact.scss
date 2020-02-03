@@ -1,22 +1,8 @@
 .contact {
     position: absolute;
-    top: 4867px;    
+    top: -306px;    
     width: 100%;
     z-index: 2;
-
-    @media (max-width: 1199px) {
-        top: 4120px;
-    }
-
-    @media (max-width: 991px) {
-        top: 3700px;
-    }
-
-    @media (max-width: 767px) {
-        top: 4478px;
-    }
-
-
 
     &__block {
         background-image: url(../../img/contact/contact_bg.png);
@@ -26,6 +12,12 @@
     &__title {
         @include text-title (#2c4058, 0, 43px);
         padding-top: 85px;
+
+        @media (max-width: 575px) {
+            font-size: 35px;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
 
 
         &::before {        
@@ -37,11 +29,19 @@
             background-color: #2c4058;
             top: 60px;
             left: 45%;
+
+            @media (max-width: 575px) {
+                display: none;
+            }
         }
     }
 
     &__link {
         padding-bottom: 38px;
+
+        @media (max-width: 575px) {
+            padding-bottom: 25px;
+        }
 
         &:hover small {
          text-shadow: 3px 3px 4px blueviolet;         
@@ -81,6 +81,12 @@
             padding-right: 20px;
             padding-bottom: 60px;
         }
+
+        @media (max-width: 575px) {
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 30px;
+        }
     }
 
     &__input {
@@ -97,7 +103,7 @@
         
         @media (max-width: 767px) {
             max-width: 100%;
-        }
+        }        
         
         &:focus {
             background-color:#f4f4f4;
@@ -106,10 +112,18 @@
 
     &__input:first-child {
         margin-bottom: 32px;
+
+        @media (max-width: 575px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__input:nth-child(2) {
         margin-bottom: 29px;
+
+        @media (max-width: 575px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__input::-webkit-input-placeholder {
@@ -125,6 +139,12 @@
         @media (max-width: 767px) {
             margin-left: 50px;
             margin-top: 20px;
+        }
+
+        @media (max-width: 575px) {
+            margin-left: 0;
+            margin-top: 10px;
+            padding: 17px 127px;
         }
 
         &:hover  {

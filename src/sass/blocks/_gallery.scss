@@ -1,9 +1,15 @@
 .gallery {
-    height: 100%;
+    // height: 100%;
     position: relative;    
 
     &__title {
-        @include text-title (#2c4058, 175px, 93px);        
+        @include text-title (#2c4058, 175px, 93px);
+        
+        @media (max-width: 575px) {
+            font-size: 35px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
         
         &::before {        
             content: '';
@@ -14,6 +20,10 @@
             background-color: #2c4058;
             top: -35px;
             left: 45%;
+
+            @media (max-width: 575px) {
+                display: none;
+            }
         }
     }
     &__picture {
@@ -44,12 +54,21 @@
     &__btn {
         padding-top: 73px;
         padding-bottom: 157px;
-        text-align: center;                
+        text-align: center;
+        
+        @media (max-width: 575px) {
+            padding-top: 47px;
+            padding-bottom: 57px;
+        }        
     }
 
     &__link {
         @include btn;
         padding: 17px 55px;
+
+        @media (max-width: 575px) {
+            padding: 17px 102px;
+        }
     }
 
     &__link:hover  {
