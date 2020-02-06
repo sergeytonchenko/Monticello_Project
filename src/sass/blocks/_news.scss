@@ -5,7 +5,7 @@
 
     &__bg {
         height: 100%;
-        background-image: url(../../img/news/news_bg.png);        
+        background-image: url(../img/news/news_bg.png);        
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -92,14 +92,14 @@
     &__photo {
         width: 60px;
         height: 60px;
-        background-image: url(../../img/news/icon1.png);
+        background-image: url(../img/news/icon1.png);
         
         &--second {
-            background-image: url(../../img/news/icon2.png);
+            background-image: url(../img/news/icon2.png);
         }
 
         &--third {
-            background-image: url(../../img/news/icon3.png);
+            background-image: url(../img/news/icon3.png);
         }
     }
 

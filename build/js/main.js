@@ -83,7 +83,7 @@ $(document).ready(function(){
       nav: false,
       dots: true,
       dotsEach: 1,
-      autoplay: false,
+      autoplay: true,
       mouseDrag: true,
       dotsClass: 'header__dots',
       dotClass: 'header__dot',                                 
